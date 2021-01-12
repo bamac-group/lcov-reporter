@@ -1,6 +1,4 @@
-# Jest reporter action
-
-[![codecov](https://codecov.io/gh/vebr/jest-lcov-reporter/branch/master/graph/badge.svg)](https://codecov.io/gh/vebr/jest-lcov-reporter)
+# Lcov reporter action
 
 This action comments a pull request with a HTML test coverage report.
 
@@ -35,7 +33,7 @@ with the new data and keep the previous comments. Defaults to `false`.
 ## Example usage
 
 ```yml
-uses: vebr/jest-lcov-reporter@v0.2.0
+uses: bamac-group/lcov-reporter@v0.2.0
 with:
   github-token: ${{ secrets.GITHUB_TOKEN }}
   lcov-file: ./coverage/lcov.info
@@ -43,4 +41,4 @@ with:
 
 ## Acknowledgements
 
-The initial code is based on [ziishaned/jest-reporter-action](https://github.com/ziishaned/jest-reporter-action).
+The initial code is based on [vebr/jest-lcov-reporter](https://github.com/vebr/jest-lcov-reporter) and [ziishaned/jest-reporter-action](https://github.com/ziishaned/jest-reporter-action).

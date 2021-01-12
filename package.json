@@ -1,10 +1,13 @@
 {
-	"name": "jest-lcov-reporter",
+	"name": "@bamac-group/lcov-reporter",
 	"version": "0.2.0",
 	"description": "Comments a pull request with the lcov code coverage",
 	"license": "MIT",
-	"author": "Veddha Edsa <@vebr>",
-	"repository": "https://github.com/vebr/jest-lcov-reporter",
+	"author": "Richard Klose <richard.klose@bachconsulting.de>",
+	"contributors":[
+		"Veddha Edsa <@vebr>"
+	],
+	"repository": "https://github.com/bamac-group/lcov-reporter",
 	"keywords": [
 		"actions",
 		"pull-request",

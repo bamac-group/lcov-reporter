@@ -29,11 +29,14 @@ function comment(lcov, table, options) {
 		table,
 		"\n\n",
 		details(summary("Coverage Report"), tabulate(lcov, options)),
-		commentIdentifier(options.workflowName),
+		commentIdentifier(options.workflowName, options.name),
 	)
 }
 
-export function commentIdentifier(workflowName) {
+export function commentIdentifier(workflowName, name) {
+	if (name) {
+		return `<!-- Code Coverage Comment: ${workflowName}/${name} -->`
+	}
 	return `<!-- Code Coverage Comment: ${workflowName} -->`
 }
 

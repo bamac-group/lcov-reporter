@@ -10,6 +10,11 @@ describe("commentIdentifier", () => {
 		const result = commentIdentifier("workflow name")
 		expect(result).toEqual("<!-- Code Coverage Comment: workflow name -->")
 	})
+
+	test("a comment identifier is returned with a test name", function() {
+		const result = commentIdentifier("workflow name", "test name")
+		expect(result).toEqual("<!-- Code Coverage Comment: workflow name/test name -->")
+	})
 })
 
 describe("diff", () => {
